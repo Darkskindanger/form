@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Multi Form - Plan</title>
+  </head>
+  <body
+    class="relative bg-slate-300 max-[1000px]:bg-[url('../assets/images/bg-sidebar-mobile.svg')] bg-no-repeat bg-contain flex flex-col gap-5"
+  >
+    <div
+      class="hidden max-[1000px]:flex -top-28 left-20 \ gap-5 justify-center mt-14"
+    >
+      <span
+        class="border-solid rounded-full border px-4 border-white p-2 text-white font-semibold"
+        ><a href="index.html">1</a></span
+      >
+      <span
+        class="border-solid rounded-full border px-4 border-white p-2  text-white font-semibold"
+        ><a href="page2.html">2</a></span
+      >
+      <span
+        class="border-solid rounded-full border px-4 border-white p-2  text-black bg-indigo-200 font-semibold"
+        ><a href="page3.html">3</a></span
+      >
+      <span
+        class="border-solid rounded-full border px-4 border-white p-2 text-white font-semibold"
+        ><a href="page4.html">4</a></span
+      >
+    </div>
+    <section
+      class="relative flex w-11/12 bg-white p-4 rounded-md mx-auto mt-20 max-[1000px]:mt-0"
+    >
+      <div
+        class="bg-[url('../assets/images/bg-sidebar-desktop.svg')] bg-cover bg-no-repeat w-72 p-8 rounded-md max-[1000px]:hidden"
+      >
+        <ul class="inline-flex flex-col gap-3">
+          <li>
+            <h5 class="text-lg text-slate-400">Step 1</h5>
+            <p class="text-xl text-white">YOUR INFO</p>
+          </li>
+          <li>
+            <h5 class="text-lg text-slate-400">Step 2</h5>
+            <p class="text-xl text-white">SELECT PLAN</p>
+          </li>
+          <li>
+            <h5 class="text-lg text-slate-400">Step 3</h5>
+            <p class="text-xl text-white">ADD-ONS</p>
+          </li>
+          <li>
+            <h5 class="text-lg text-slate-400">Step 4</h5>
+            <p class="text-xl text-white">SUMMARY</p>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="inline-flex flex-col gap-2 min-[1000px]:w-10/12 max-[1000px]:mt-2 mx-auto"
+      >
+        <h2 class="text-3xl ">Pick add-ons</h2>
+        <p class="text-gray-500 mx-10 max-[1000px]:mx-auto">
+          Add-ons help enhance your gaming experience.
+        </p>
+
+        <form
+          action=""
+          id="form"
+          class="flex flex-col justify-evenly mt-5 mx-2 gap-2 min-[1000px]:flex-row w-11/12 max-[1000px]:mx-auto "
+        >
+          <label for="online-services" class="plans w-11/12">
+            <div class="inline-flex gap-2 min-[1000px]:flex-col">
+                <input
+                type="checkbox"
+                name="plan"
+                id="online-services"
+                class="checked:border-indigo-500 "/>
+              <div>
+                <h5 class="font-bold text-base">Online Services</h5>
+                <span class="text-sm">Access to multiplayer games</span>
+              </div>
+            <p class="self-center text-indigo-500">+$1/mo</p>
+            </div>
+          </label>
+          <label for="larger-storage" class="plans w-11/12">
+            <div class="inline-flex gap-2 min-[1000px]:flex-col">
+                <input
+                type="checkbox"
+                name="plan"
+                id="larger-storage"
+                class="checked:border-indigo-500 "/>
+              <div>
+                <h5 class="font-bold text-base">Larger Storage</h5>
+                <span class="text-sm">Add Extra 1TB of cloud save</span>
+              </div>
+            <p class="self-center text-indigo-500">+$1/mo</p>
+            </div>
+          </label>
+          <label for="customizable-profile" class="plans w-11/12">
+            <div class="inline-flex gap-2 min-[1000px]:flex-col">
+                <input
+                type="checkbox"
+                name="plan"
+                id="customizable-profile"
+                class="checked:border-indigo-500 "/>
+              <div>
+                <h5 class="font-bold text-base">Customizable Profile</h5>
+                <span class="text-sm ">Custom theme on your profile</span>
+              </div>
+            <p class="self-center text-indigo-500">+$1/mo</p>
+            </div>
+          </label>
+        </form>
+
+    </section>
+    <footer class="bg-white flex justify-between p-1.5 fixed bottom-0 w-screen">
+      <button class="p-1.5 text-gray-500 font-semibold w-20 cursor rounded-md">
+        <a href="index.html">Go Back</a>
+      </button>
+      <input
+        type="submit"
+        form="form"
+        value="Next Step"
+        class="bg-slate-900 p-1.5 text-white w-20 cursor font-semibold rounded-md"
+        required
+      />
+    </footer>
+  </body>
+</html>

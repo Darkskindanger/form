@@ -4,6 +4,6 @@
 
 @layer components {
   .plans {
-    @apply border rounded border-gray-400 p-2 has-[:checked]:bg-indigo-50 has-[:checked]:text-indigo-900 has-[:checked]:ring-indigo-200 hover:bg-slate-200;
+    @apply  rounded-lg border-2 border-gray-300 p-2 has-[:checked]:border-indigo-500 has-[:checked]:text-indigo-900 has-[:checked]:ring-indigo-200 hover:bg-slate-200;
   }
 }
