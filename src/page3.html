@@ -63,16 +63,18 @@
         </p>
 
         <form
-          action=""
-          id="form"
+          action="page4.html"
+          id="extrasForm"
           class="flex flex-col justify-evenly mt-5 mx-2 gap-2 min-[1000px]:flex-row w-11/12 max-[1000px]:mx-auto "
         >
           <label for="online-services" class="plans w-11/12">
             <div class="inline-flex gap-2 min-[1000px]:flex-col">
                 <input
                 type="checkbox"
-                name="plan"
+                name="extra1"
                 id="online-services"
+                data-price="$1"
+                value="Online Services"
                 class="checked:border-indigo-500 "/>
               <div>
                 <h5 class="font-bold text-base">Online Services</h5>
@@ -85,8 +87,10 @@
             <div class="inline-flex gap-2 min-[1000px]:flex-col">
                 <input
                 type="checkbox"
-                name="plan"
+                name="extra"
                 id="larger-storage"
+                value="Larger Storage"
+                data-price="$1"
                 class="checked:border-indigo-500 "/>
               <div>
                 <h5 class="font-bold text-base">Larger Storage</h5>
@@ -99,8 +103,10 @@
             <div class="inline-flex gap-2 min-[1000px]:flex-col">
                 <input
                 type="checkbox"
-                name="plan"
+                name="extra"
                 id="customizable-profile"
+                value="Customizable Profile"
+                data-price="$1"
                 class="checked:border-indigo-500 "/>
               <div>
                 <h5 class="font-bold text-base">Customizable Profile</h5>
@@ -118,11 +124,12 @@
       </button>
       <input
         type="submit"
-        form="form"
+        form="extrasForm"
         value="Next Step"
         class="bg-slate-900 p-1.5 text-white w-20 cursor font-semibold rounded-md"
         required
       />
     </footer>
+    <script src="js-files/page3-script.js"></script>
   </body>
 </html>

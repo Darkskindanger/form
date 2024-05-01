@@ -63,8 +63,8 @@
         </p>
 
         <form
-          id="form"
-          action=""
+          id="infoForm"
+          action="page2.html"
           class="flex flex-col gap-3 mt-5 mx-10 min-[1000px]:w-11/12 max-[1000px]:mx-auto w-3/4"
         >
           <label for="name" class="text-slate-800 text-base font-semibold"
@@ -79,7 +79,7 @@
           <label for="email" class="text-slate-800 text-base font-semibold"
             >Email Address</label
           ><input
-            type="text"
+            type="email"
             id="email"
             placeholder="e.g Stephenjames@email.com"
             class="border border-solid p-2"
@@ -103,11 +103,12 @@
       </button>
       <input
         type="submit"
-        form="form"
+        form="infoForm"
         value="Next Step"
         class="bg-slate-900 p-1.5 text-white w-20 cursor font-semibold rounded-md"
         required
       />
     </footer>
+    <script src="js-files/indexScript.js"></script>
   </body>
 </html>
