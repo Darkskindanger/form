@@ -30,7 +30,7 @@
       >
     </div>
     <section
-      class="relative flex w-11/12 bg-white p-4 rounded-md mx-auto mt-20 max-[1000px]:mt-0"
+      class="relative flex min-w-[22rem] bg-white p-4 rounded-md mx-auto mt-20 max-[1000px]:mt-0 min-[1000px]:w-min"
     >
       <div
         class="bg-[url('../assets/images/bg-sidebar-desktop.svg')] bg-cover bg-no-repeat w-72 p-8 rounded-md max-[1000px]:hidden"
@@ -57,7 +57,7 @@
       <div
         class="inline-flex flex-col gap-2 min-[1000px]:w-10/12 max-[1000px]:mt-2 mx-auto"
       >
-        <h2 class="text-3xl ">Pick add-ons</h2>
+        <h2 class="text-3xl min-[1000px]: mx-10">Pick add-ons</h2>
         <p class="text-gray-500 mx-10 max-[1000px]:mx-auto">
           Add-ons help enhance your gaming experience.
         </p>
@@ -65,60 +65,63 @@
         <form
           action="page4.html"
           id="extrasForm"
-          class="flex flex-col justify-evenly mt-5 mx-2 gap-2 min-[1000px]:flex-row w-11/12 max-[1000px]:mx-auto "
+          class="inline-flex flex-col justify-evenly mt-5 mx-2 gap-2 min-[1000px]:mx-auto  "
         >
-          <label for="online-services" class="plans w-11/12">
-            <div class="inline-flex gap-2 min-[1000px]:flex-col">
+          <label for="online-services" class="plans mx-auto w-11/12 min-[1000px]:w-72 ">
+            <div class="inline-flex  gap-2 w-full min-[1000px]: w-full">
                 <input
                 type="checkbox"
-                name="extra1"
+                name="extra"
                 id="online-services"
-                data-price="$1"
-                value="Online Services"
+                value="Online Services $1"
                 class="checked:border-indigo-500 "/>
               <div>
                 <h5 class="font-bold text-base">Online Services</h5>
                 <span class="text-sm">Access to multiplayer games</span>
               </div>
-            <p class="self-center text-indigo-500">+$1/mo</p>
+            <p id='extrasPrice' class="self-center text-indigo-500">+$1/mo</p>
             </div>
           </label>
-          <label for="larger-storage" class="plans w-11/12">
-            <div class="inline-flex gap-2 min-[1000px]:flex-col">
+          <label for="larger-storage" class="plans w-11/12 mx-auto min-[1000px]:w-72">
+            <div class="inline-flex gap-2 w-full min-[1000px]: w-full">
                 <input
                 type="checkbox"
                 name="extra"
                 id="larger-storage"
-                value="Larger Storage"
-                data-price="$1"
+                value="Larger Storage $1"
                 class="checked:border-indigo-500 "/>
               <div>
                 <h5 class="font-bold text-base">Larger Storage</h5>
                 <span class="text-sm">Add Extra 1TB of cloud save</span>
               </div>
-            <p class="self-center text-indigo-500">+$1/mo</p>
+            <p id='extrasPrice' class="self-center text-indigo-500">+$1/mo</p>
             </div>
           </label>
-          <label for="customizable-profile" class="plans w-11/12">
-            <div class="inline-flex gap-2 min-[1000px]:flex-col">
+          <label for="customizable-profile" class="plans w-11/12 mx-auto min-[1000px]:w-72">
+            <div class="inline-flex gap-2 w-full min-[1000px]: w-4/6">
                 <input
                 type="checkbox"
                 name="extra"
                 id="customizable-profile"
-                value="Customizable Profile"
-                data-price="$1"
+                value="Customizable Profile, $1"
                 class="checked:border-indigo-500 "/>
               <div>
                 <h5 class="font-bold text-base">Customizable Profile</h5>
                 <span class="text-sm ">Custom theme on your profile</span>
               </div>
-            <p class="self-center text-indigo-500">+$1/mo</p>
+            <p id='extrasPrice' class="self-center text-indigo-500">+$1/mo</p>
             </div>
           </label>
         </form>
-
+        <input
+        type="submit"
+        form="extrasForm"
+        value="Next Step"
+        class=" max-[1000px]:hidden bg-slate-900 p-1.5 text-white w-20 cursor font-semibold rounded-md self-end mt-10"
+        required
+      />
     </section>
-    <footer class="bg-white flex justify-between p-1.5 fixed bottom-0 w-screen">
+    <footer class="bg-white flex justify-between p-1.5 fixed bottom-0 w-screen min-[1000px]:hidden">
       <button class="p-1.5 text-gray-500 font-semibold w-20 cursor rounded-md">
         <a href="index.html">Go Back</a>
       </button>

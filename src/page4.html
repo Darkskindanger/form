@@ -30,7 +30,7 @@
       >
     </div>
     <section
-      class="relative flex w-11/12 bg-white p-4 rounded-md mx-auto mt-20 max-[1000px]:mt-0"
+      class="relative flex mt-0  bg-white p-4 rounded-md mx-auto min-[1000px]:mt-20 w-10/12"
     >
       <div
         class="bg-[url('../assets/images/bg-sidebar-desktop.svg')] bg-cover bg-no-repeat w-72 p-8 rounded-md max-[1000px]:hidden"
@@ -57,31 +57,33 @@
       <div
         class="inline-flex flex-col gap-2 min-[1000px]:w-10/12 max-[1000px]:mt-2 mx-auto"
       >
-        <h2 class="text-3xl ">Finishing up</h2>
+        <h2 class="text-3xl mx-auto" >Finishing up</h2>
         <p class="text-gray-500 mx-10 max-[1000px]:mx-auto">
           Double-check everything looks OK before confirming.
         </p>
-        <div class="bg-gray-200 p-4 rounded-lg">
-            <h4 class="font-semibold">Arcade (Monthly)</h4>
+        <div class="bg-gray-200 p-4 rounded-lg min-[1000px]:ml-4" >
+          <div class="flex justify-between">
+            <h4 class="font-semibold" id="plan"></h4>
+            <p id="planCost" class="self"></p></div>
             <a href="#" class="underline">Change</a>
-
             <hr class="border-solid border-gray-500 m-2">
 
-    <div class="flex justify-between">
-        <h4>Online Service</h4>
-        <p>+$1/mo</p>
-    </div>
-    <div class="flex justify-between">
-        <h4>Larger Storage</h4>
-        <p>+$2/mo</p>
-    </div>
+    <div class="flex justify-around flex-col" id="extras-container">
+
+    </div> 
   </div>
 <div class="flex justify-between items-center">
-  <p>Total (per month)</p>
-<span class="text-indigo-700 font-semibold p-2">+12/mo</span>
-</div>
+  <p class="min-[1000px]:ml-5">Total (per month)</p>
+<span class="text-indigo-700 font-semibold p-2" id="total">+12/mo</span>
+</div>        <input
+type="submit"
+form="extrasForm"
+value="Next Step"
+class=" max-[1000px]:hidden bg-slate-900 p-1.5 text-white w-20 cursor font-semibold rounded-md self-end mt-10 "
+required
+/>
     </section>
-    <footer class="bg-white flex justify-between p-1.5 fixed bottom-0 w-screen">
+    <footer class="bg-white flex justify-between p-1.5 fixed bottom-0 w-screen min-[1000px]:hidden">
       <button class="p-1.5 text-gray-500 font-semibold w-20 cursor rounded-md">
         <a href="index.html">Go Back</a>
       </button>
@@ -93,5 +95,6 @@
         required
       />
     </footer>
+    <script src="js-files/page4-script.js"></script>
   </body>
 </html>

@@ -9,11 +9,6 @@ if (localStorage) {
     if (name.value == "" || email.value == "" || phone.value == "") {
       alert("Please finish form before submission");
     } else {
-      alert("This form has been successfully submitted!");
-      console.log(
-        `This user has a name of ${name.value}, Email of ${email.value} and phone of ${phone.value}`
-      );
-
       const formData = {
         name: name,
         email: email,

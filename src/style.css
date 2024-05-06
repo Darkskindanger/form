@@ -592,8 +592,16 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.-left-14 {
+  left: -3.5rem;
 }
 
 .-top-28 {
@@ -606,6 +614,10 @@ video {
 
 .left-20 {
   left: 5rem;
+}
+
+.top-3 {
+  top: 0.75rem;
 }
 
 .m-2 {
@@ -627,6 +639,18 @@ video {
   margin-right: auto;
 }
 
+.ml-14 {
+  margin-left: 3.5rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-14 {
   margin-top: 3.5rem;
 }
@@ -635,8 +659,20 @@ video {
   margin-top: 5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .flex {
@@ -655,12 +691,20 @@ video {
   height: 1.5rem;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .w-11 {
   width: 2.75rem;
 }
 
 .w-11\/12 {
   width: 91.666667%;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-20 {
@@ -679,8 +723,26 @@ video {
   width: 18rem;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .w-screen {
   width: 100vw;
+}
+
+.min-w-\[22rem\] {
+  min-width: 22rem;
 }
 
 .cursor-pointer {
@@ -707,6 +769,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .justify-evenly {
   justify-content: space-evenly;
 }
@@ -721,6 +787,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .self-center {
@@ -1007,10 +1077,6 @@ video {
 }
 
 @media (max-width: 1000px) {
-  .max-\[1000px\]\:m-2 {
-    margin: 0.5rem;
-  }
-
   .max-\[1000px\]\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1032,18 +1098,52 @@ video {
     display: none;
   }
 
+  .max-\[1000px\]\:w-9\/12 {
+    width: 75%;
+  }
+
   .max-\[1000px\]\:bg-\[url\(\'\.\.\/assets\/images\/bg-sidebar-mobile\.svg\'\)\] {
     background-image: url('../assets/images/bg-sidebar-mobile.svg');
   }
 }
 
 @media (min-width: 1000px) {
+  .min-\[1000px\]\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .min-\[1000px\]\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .min-\[1000px\]\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .min-\[1000px\]\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
+  .min-\[1000px\]\:hidden {
+    display: none;
+  }
+
   .min-\[1000px\]\:w-10\/12 {
     width: 83.333333%;
   }
 
   .min-\[1000px\]\:w-11\/12 {
     width: 91.666667%;
+  }
+
+  .min-\[1000px\]\:w-72 {
+    width: 18rem;
+  }
+
+  .min-\[1000px\]\:w-min {
+    width: -moz-min-content;
+    width: min-content;
   }
 
   .min-\[1000px\]\:flex-row {
